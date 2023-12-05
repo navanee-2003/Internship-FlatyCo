@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Poppins:wght@200&family=Quicksand:wght@600;700&family=Wix+Madefor+Display:wght@700&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
+  text-decoration: none;
+}
+.search-container {
+  width: 100%;
+  height: 20rem;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.search-container .search {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("assets/banner.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60%;
+}
+
+.search-container .search input {
+  padding: 1%;
+}
+
+.search-container .search button {
+  padding: 1%;
+  width: 5%;
+}
+.featured-properties {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.featured-properties .header {
+  width: inherit;
+  height: 20%;
+  /* background-color: bisque; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.featured-properties .content {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  gap: 3%;
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.featured-properties .content .card {
+  margin-bottom: 2%;
+}
+
+.why-choose-us {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aquamarine; */
+}
+
+.why-choose-us .header {
+  width: inherit;
+  height: 20%;
+  /* background-color: bisque; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.why-choose-us .content {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  gap: 3%;
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonials {
+  width: 100%;
+  height: 35rem;
+  /* background-color: aquamarine; */
+}
+
+.testimonials .header {
+  width: inherit;
+  height: 20%;
+  /* background-color: bisque; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.swiper {
+  width: inherit;
+  height: 65%;
+}
+
+.swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-footer{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+}
+.page-footer .about-us{
+    width: 25%;
+    height: inherit;
+    background-color: black;
+}
+
+.page-footer .links{
+    width: 25%;
+    background-color: rgb(181, 136, 136);
+}
+
+.page-footer .newsletter{
+    width: 50%;
+    background-color: rgb(143, 49, 49);
+}
+
+#newsletter input{
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .featured-properties .footer {
+    margin-top: 5%;
+  }
+
+  .search-container .search input {
+    padding: 2%;
+  }
+  .search-container .search button{
+    padding: 2%;
+    width: 20%;
+  }
+  .testimonials {
+    height: 65rem;
+  }
+
+  .swiper-slide .card{
+    height: 80%;
+    width: 80%;
+    overflow-y: scroll;
+  }
+
+  #newsletter input{
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .featured-properties .footer {
+    margin-top: 5%;
+  }
+  .testimonials {
+    height: 30rem;
+  }
+
+  .search-container .search input {
+    padding: 2%;
+  }
+  
+  .search-container .search button {
+    padding: 2%;
+    width: 10%;
+  }
+
+  .testimonials .content{
+    overflow-y: scroll;
+  }
+
+  .swiper-slide .card{
+    height: 85%;
+    width: 80%;
+    overflow-y: scroll;
+  }
+
+  #newsletter input{
+    width: 50%;
+  }
+
+}
